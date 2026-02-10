@@ -1,0 +1,54 @@
+/* paral is just a variable name for our ID selector*/
+#paral {
+    text-align: center;
+    color: #ff4da6;
+}
+
+/* a period (.) identifies our Class Selector */
+.mycenter{
+    text-align: center;
+    color: red;
+}
+
+/* commas (,) are used for Grouping Selectors (this is to group similar groups together) */
+h1,h2,p{
+    text-align: center;
+    color: red;
+}
+
+/* this Muliple Selector automatically applies to the other elements*/
+div div p{
+    text-align: left;
+    color: blue;
+}
+/* Child selectors */
+h1:first-child{
+    color:blueviolet;
+}
+
+/* nth child selector */
+p:nth-child(2){
+    color: #33ccff;
+}
+
+/* This is to modify the table */
+table, th, td{
+    border: 1px solid black;
+}
+
+table tr:nth-child(even){
+    background-color:lightblue;
+}
+
+table tr:nth-child(odd){
+    background-color: lightpink;
+}
+/* changes color for table heading */
+th{
+    background-color: gray;
+}
+
+table{
+    width: 80%;
+    /* border-collapse: collapse; */
+}

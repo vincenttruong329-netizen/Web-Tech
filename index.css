@@ -1,0 +1,36 @@
+body{
+    background-color: lightskyblue;
+    background-image:url(https://cdn.sanity.io/images/d075r9p6/production/457b90f97ec70801f4fc63cf8285f8858f4e6700-1920x2405.jpg?auto%3Dformat%26fit%3Dmax%26q%3D75%26w%3D1900);
+    background-repeat: no-repeat;
+    /* changes the size of the background image */
+    background-size: 200px;
+    /* changes photos position based off of pixels */
+    background-position: bottom 7px right 5px;
+    /* this will fix the background image on the screen. 
+    it would always be "pinned" or shown whenever you'd scroll */
+    background-attachment: fixed;
+}
+
+/* changes the attributes for my div's */
+div {
+    color:red;
+}
+
+h1{
+    color:aquamarine;
+}
+
+p{
+    color:black;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+}
+h4{
+    text-align: left;
+}

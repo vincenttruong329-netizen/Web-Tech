@@ -1,4 +1,11 @@
 <html>
+    <head>
+        <!-- This is to use the colors in index.css-->
+        <link rel="stylesheet" href = "./index.css" type="text/css">
+        <link rel="stylesheet" href = "./CSSSelector.css" type="text/css">
+        <!-- This is to render the mathematical formulas-->
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
 <body>
     <h1>This is heading size 1</h1>
     <h2>This is heading size 2</h2>
@@ -10,17 +17,17 @@
     <p>This is a paragraph</p>
 
 
-
+<!-- using mathematics -->
     <!-- This is an example of inline math formulas -->
-    \(\frac{-b &plusmn; \sqrt{b^2-4bc}}{2a}\) This is text to test
+    \(\frac{-b &plusmn; \sqrt{b^2-4ac}}{2a}\) This is text to test
     <!-- This centers the mathematical formula into the center of the page -->
-    $$ \(\frac{-b &plusmn; \sqrt{b^2-4bc}}{2a}\) $$ This is text to test
+    $$ \(\frac{-b &plusmn; \sqrt{b^2-4ac}}{2a}\) $$ This is text to test
     <!-- This is a newline-->
      <br>
      $$ \sum_{i=0}^n a^i = \frac{a^{n+1}-1}{a-1}(a \neq 1) $$
-
+     
+<!-- using multimedia -->
     <h4>Multimedia:</h4>
-
     <!-- Video -->
     <video width = "250" height="200" controls>
         <source src = "https://www.w3schools.com/html/movie.mp4" type = "video/mp4">
@@ -36,5 +43,103 @@
     <iframe src = "https://youtube.com/embed/ekr2nIex040">
 
     </iframe>
-</body>
+
+<!-- using div's -->
+    <div>
+        <p>This is a paragraph inside of a div block</p>
+    </div>
+
+    <!-- this is making the colored div blocks -->
+    <div style="width: 50px; height: 50px; background-color: red"></div>
+    <div style="width: 50px; height: 50px; background-color: green"></div>
+    <div style="width: 50px; height: 50px; background-color: blue;"></div>
+    <div style="width: 50px; height: 50px; background-color: yellow;"></div>
+
+    <!-- this is creating a colored block that acts as a hyperlink -->
+    <a href="https://www.google.com" target="_blank"> 
+        <div style="width: 50px; height: 50px; background-color: pink;"></div>
+    </a>
+<!-- Utilizing span to change the color of specific words -->
+    <div>
+        <p>This paragraph is black, except for the word
+            <span style="color:red">red</span>!
+        </p>
+    </div>
+
+<!-- CSSSelector.css -->
+    <!-- Utilizing the ID Selector (aka unique style) -->
+    <p id="paral">Hello World! Welcome to CSCI 4410!</p>
+    <!-- Utilizing the Class Selector -->
+    <p class="mycenter">This is just a test paragraph, testing class selectors!</p>
+    
+    <!-- Utilizing the Multiple Selector -->
+     <div>
+        <div>
+            <p>This is a paragraph in nested divisons</p>
+        </div>
+     </div>
+     <!-- utilizing the child selectors -->
+      <div>
+        <h3>This is the first child</h3> <!-- this is incorrect for now-->
+        <h3>This is the second child</h3>
+
+      </div>
+
+      <!-- Styling HTML Table with nth-child -->
+      <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Capital</th>
+                <th>Continent</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>United States</td>
+                <td>Washington, D.C.</td>
+                <td>North America</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <table>Beijing</table>
+                <td>Asia</td>
+            </tr>
+            <tr>
+                <td>France</td>
+                <td>Paris</td>
+                <td>Europe</td>
+            </tr>
+            <tr>
+                <td>Brazil</td>
+                <td>Brasilia</td>
+                <td>South America</td>
+            </tr>
+        </tbody>
+      </table>
+
+      <!-- Introduction to the Box Model -->
+       <div class="box">
+        This text is the context of the box.
+       </div>
+       <!-- Introduction to Display -->
+       <p> Display a list of links as a horizontal menu</p>
+       <ul>
+        <li><a href="" target="_blank">HTML</a></li>
+        <li><a href="" target="_blank">CSS</a></li>
+        <li><a href="" target="_blank">JavaScript</a></li>
+       </ul>
+
+       <div id="1">box1</div>
+       <div id="2">box2 </div>
+       <div id="3">box3</div>
+       <!-- Introductino to Float & Clear -->
+        <p><img class="test" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" style="width: 170px;height:170px;margin-left:15px">
+        This is the paragraph describing the picture. This is the paragraph describing the picture.
+        This is the paragraph describing the picture. This is the paragraph describing the picture.
+        This is the paragraph describing the picture. This is the paragraph describing the picture.
+        This is the paragraph describing the picture. This is the paragraph describing the picture.
+        </p>
+    </body>
 </html>
