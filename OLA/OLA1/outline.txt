@@ -1,0 +1,32 @@
+Top:
+- H1: Vincent's Homepage
+
+Section 1: About Me
+- 1 paragraph with <strong>, <mark>, <em> formatting
+- Image (of me) + alt
+
+Section 2: My hobbies
+- UL + OL + nested list + short bullet point explanation of my hobbies
+
+Section 3: Favorites Books to Read Table
+- thead + tbody + rowspan/colspan
+
+Section 4: External Link
+- link to a meaningful website + short explanation describing what the link is.
+
+Reflection:
+1. What changed between your Stage 1 outline and your final HTML? Why did you change it?
+- A lot had changed. Once I finished the stage 1 outline, I didn't like that everything was unformatted. 
+To fix that, I had centered all the elements. I implemented a flexible layout in order to place my image next to the paragraph under "About Me."
+- I had also chosen to not use ordered lists, because unordered lists just made more sense to use.
+- I added more elements than what was asked of in order to achieve a presentable webpage.
+- I had also used my hyperlink to plug in my social media instead of just linking it to my favorite website. 
+I changed it, because I'm planning on building onto this webpage later on for a more professional usage.
+
+2. What was the hardest part to implement correctly, and why?
+- The hardest part to implement was putting the image and the textbox side by side along with keeping everything centered.
+- I had only used flexbox once, so I had to tinker around with it a lot.
+
+3. Describe one mistake you made and how you fixed it.
+- One mistake was that once I had achieved the image and the textbox to be side by side, thne textbox was unformatted and ran off the screen.
+To fix this, I had set a max width on for the paragraph, so that it would be forced to not run off.
