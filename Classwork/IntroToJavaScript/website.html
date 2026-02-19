@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Demo</title>
+    </head>
+    <body>
+        
+        <div>Heading</div>
+        <!-- this is creating a button -->
+        <button onclick="my_function()">Try it</button>
+        
+        <!-- this is testing function invocation when an event occurs -->
+            <button onclick="showMessage()">Event Button</button>
+            <!-- double click this button -->
+            <button ondblclick="showMessage()">Double Click Me</button>
+            <!-- search box thing -->
+            <input type="text" placeholder="Type something..." onkeydown="alert('Key Pressed')">
+
+        <!-- this is function invocation with an event listener -->
+            <button id="myButton">Event Listener Button</button>
+
+        <!-- this is used to select & modify dom elements -->
+            <h1 id="heading">Hello, DOM!</h1>
+        <!-- working with query selector -->
+            <h1 id="myTitle">Introduction to JavaScript</h1>
+            <p class="box">This is for query selector</p>
+            <p class="box">This is for query selector</p>
+            <p class="box">This is for query selector</p>
+        <!-- working with query selector all -->
+            <h1 id="title1">Heading 1</h1>
+            <h1 id="title2">Heading 2</h1>
+            <h1 id="title3">Heading 3</h1>
+		    <button onclick="changeText()">Change Headings</button>
+        <!-- modifying dom elements -->
+         <h1 id="heading">Hello, DOM!</h1>
+            <script type= "text/javascript" src="./javascript.js"></script>
+    </body>
+</html>
