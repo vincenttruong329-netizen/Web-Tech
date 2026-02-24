@@ -1,0 +1,44 @@
+Page 1: OLA 1 (Personal Homepage)
+- Header: Site title & name
+- Navigation: links to OLA1 and OLA2
+- Main Content:
+  - About Me
+  - Image + caption/credit
+    - Fix links (the links became invalid after time passed)
+  - Favorite Website link
+  - Hobbies list (custom bullet style)
+  - Favorites books table (thead/tbody)
+  - Social Media Links
+  - Bookmark to Top
+- Footer: copyright/contact
+
+Page 2: OLA2 (CV Page)
+- Header: "Vincent's CV"
+- Navigation: links to OLA1 and OLA2
+- Main Content:
+  - Education
+  - Skills
+  - Work Experience
+  - Certificates
+  - Awards
+  - Projects
+  - Bookmark to Top
+- Footer: copyright/contact
+
+Reflection:
+
+-What changed and why?
+    - Initially, I was just planning on keeping the OLA webpage the same and use the CSS file for the CV.html.
+    I ended up deciding to remake the entire OLA 1 in order to allow it to use the CSS file, just to have more simple code
+    and to be able to reuse code easier (for example, the double lines used for aesthetic purposes).
+    - Doing this forced me to tweak with my code all over again to get it just right, in order for the photos to properly sit next
+    to the textboxes.
+-What was the hardest part and why?
+    - The hardest part was figuring out why my code didn't work properly, even after the many different paths I've taken to achieve a
+    certain 'look.' It was difficult with OLA1, and it was even more dificult and time consuming trying to replicate my old code but with CSS.
+-One mistake and how it was fixed.
+    - One mistake was from OLA1. My links that I had provided for the photos became invalid, or only worked sometimes. I decided to just add the
+    photos locally and just relatively reference them.
+
+- I apologize for the late submission, I had wanted to turn in my best work that I had found visually appealing.
+And with that desire, I kept running into so many formatting errors, but I finally got it right!!
