@@ -1,0 +1,253 @@
+/* style for both pages */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin: 0; 
+    color: #000000; 
+}
+
+/* header */
+header {
+    text-align: center;
+    background-color: #0a192f;
+    padding: 30px 0;
+    border-bottom: 1px solid #000000;
+    color: #ffffff;
+}
+
+header h1{
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* navigation */
+nav {
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* main content */
+main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    color: #112240;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* lines for header accents */
+h2.double-line {
+    position: relative;
+    text-align: center;
+    color: #112240;
+    margin: 40px 0;
+    line-height: 1;
+}
+
+/* top line */
+h2.double-line::before{
+    content: "";
+    display: block;
+    width: 120px;
+    background-color: #000000;
+    height: 1px;
+    margin: 8px auto;
+}
+
+/* bottom line */
+h2.double-line::after{
+    content: "";
+    display: block;
+    width: 120px;
+    background-color: #000000;
+    height: 1px;
+    margin: 8px auto;
+}
+
+/* changable line sizes */
+h2.line-extrasmall::before, h2.line-extrasmall::after{
+    width: 70px;
+}
+
+h2.line-small::before, h2.line-small::after{
+    width: 120px;
+}
+
+h2.line-medium::before, h2.line-medium::after{
+    width: 150px;
+}
+
+h2.line-large::before, h2.line-large::after{
+    width: 180px;
+}
+
+h2.line-extralarge::before, h2.line-extralarge::after{
+    width: 300px;
+}
+
+/* about me section */
+.about-container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 40%;
+    flex: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.image-credit {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* centered context boxes */
+.center-box{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.custom-list{
+    list-style-type: square;
+    padding-left: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.about-image img {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+
+
+/* cv style */
+.cv-section h3 {
+    color: #112240;
+    margin-top: 20px;
+}
+
+/* table */
+table {
+    width:80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}   
+
+
+/* book quote section */
+.quote-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.quote-image {
+    flex-shrink: 0; 
+    text-align: center;
+}
+
+.quote-image img {
+    display:block;
+    margin: 0 auto;
+    height: 400px;
+    width: 300px;
+}
+
+.quote-image .image-credit{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.quote-text{
+    max-width: 350px;
+    text-align: center;
+    line-height: 2;
+}
+
+/* list style */
+.top-link{
+    margin-top: 40px;
+    text-align:center;
+}
+
+
+/* image style */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.profile-container img{
+    border-radius: 10px;
+}
+
+/* footer style */
+footer {
+    background-color: #0a192f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* CV page */ 
+.cv-section {
+    text-align:center;
+}
+
+.cv-section p{
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+.cv-section ul,
+.cv-section li {
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+}
+
