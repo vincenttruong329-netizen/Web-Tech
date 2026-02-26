@@ -1,0 +1,16 @@
+body{
+    background-color:azure;
+}
+p{
+    color:aquamarine;
+}
+
+h1 { 
+    text-align: left;
+}
+h2 { 
+    text-align: center;
+}
+h1 { 
+    text-align: right;
+}
