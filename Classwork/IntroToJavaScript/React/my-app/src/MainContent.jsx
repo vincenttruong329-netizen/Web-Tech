@@ -1,4 +1,6 @@
 import {useState} from "react"; // useState is imported from React because it's a built-in Hook.
+import LoginForm from "./LoginForm";
+import MovieList from "./MovieList";
 
 function handleClick(name){
     alert(`Hello, ${name}!`);
@@ -82,6 +84,8 @@ function MainContent() {
                 <button onClick = {() => handleClick("Vincent")}>Click Me</button>
                 <HandleInput />
                 <HandleForm />
+                <LoginForm/>
+                <MovieList/>
             </main>
           );
         }

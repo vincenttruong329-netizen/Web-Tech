@@ -4,6 +4,8 @@ import MainContent from "./MainContent";
 import Footer from "./Footer";
 import Welcome from "./Welcome"; // Import the Welcome component
 import UserCard from "./UserCard";
+// Import necessary components from react-router-dom for routing
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // function App() {
 //   return (
@@ -44,24 +46,51 @@ import UserCard from "./UserCard";
 //     </div>
 //   );
 // }
-function App() {
-return (
-  <div>
-    <Header />
-    <MainContent />
-              {/* Passing Props to a componenet */}
-              <Welcome name="Alice" />  {/* Passing "Alice" as a prop */}
-              <Welcome name="Bob" />    {/* Passing "Bob" as a prop */}
-              <Welcome name="Charlie" /> {/* Passing "Charlie" as a prop */}
-              <Welcome />  {/* No name provided */}
-              {/* Passing Multiple Props to a component */}
-              <UserCard name="Alice" age={25} profession="Developer" />
-              <UserCard name="Bob" age={30} profession="Designer" />
-              <UserCard name="Charlie" age={35} profession="Manager" />
-    <Footer />
-  </div>
-);
+// function App() {
+// return (
+//   <div>
+//     <Header />
+//     <MainContent />
+//               {/* Passing Props to a componenet */}
+//               <Welcome name="Alice" />  {/* Passing "Alice" as a prop */}
+//               <Welcome name="Bob" />    {/* Passing "Bob" as a prop */}
+//               <Welcome name="Charlie" /> {/* Passing "Charlie" as a prop */}
+//               <Welcome />  {/* No name provided */}
+//               {/* Passing Multiple Props to a component */}
+//               <UserCard name="Alice" age={25} profession="Developer" />
+//               <UserCard name="Bob" age={30} profession="Designer" />
+//               <UserCard name="Charlie" age={35} profession="Manager" />
+//     <Footer />
+//   </div>
+// );
+// }
+
+
+// Define the Home component that will be shown when the user visits "/"
+function Home() {
+  return <h1>Home Page</h1>; // Displays a heading "Home Page"
 }
 
+// Define the About component that will be shown when the user visits "/about"
+function About() {
+  return <h1>About Page</h1>; // Displays a heading "About Page"
+}
 
+// Define the main App component
+function App() {
+  return (
+    // BrowserRouter is the parent component that enables React Router
+    <BrowserRouter>
+      {/* Routes is a wrapper for multiple Route components */}
+      <Routes>
+        {/* Route for the Home page: "/" means the root URL (e.g., http://localhost:5173/) */}
+        <Route path="/" element={<Home />} />
+        {/* Route for the About page: "/about" (e.g., http://localhost:5173/about) */}
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<h1>404 -Page Not Found</h1>}/>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+// Export the App component so it can be used in index.jsx
 export default App;

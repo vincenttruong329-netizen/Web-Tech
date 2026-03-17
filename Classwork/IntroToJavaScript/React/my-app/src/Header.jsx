@@ -1,9 +1,15 @@
- function Header() {
-          return (
-            <header style={{ backgroundColor: "#007bff", color: "white", padding: "15px", textAlign: "center" }}>
-              <h1>My React Website</h1>
-            </header>
-          );
-        }
-        
-        export default Header;
+import { Link } from "react-router-dom";
+
+function Header() {
+  return (
+    <header>
+      <h1>My Website</h1>
+      <nav>
+        <Link to="/">Home</Link> | 
+        <Link to="/about">About</Link>
+      </nav>
+    </header>
+  );
+}
+
+export default Header;
